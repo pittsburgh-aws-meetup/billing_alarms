@@ -1,0 +1,27 @@
+---
+  # Set the phone number to use for notifications
+  phone: <phone_number>
+  # Set the email address to use for notifications
+  email: <email_address>
+  budget:
+    # Set the amount of your maximum desired budget here, please note this maximum is not enforced, it is merely a
+    # reference value for the alerting mechanisms
+    amount: 10
+    # Set your currency here, a list of supported currencies has been difficult to find, if you know AWS supports it use
+    # what you like, otherwise, stick to USD.
+    currency: USD
+  # Set your notifications here, mechanism specifies whether you will be notified by email of text message
+  # The threshold specifies what % of the maximum budget
+  # Valid values for notification mechanism are email and sms
+  # Valid values for notification threshold are any integer greater than zero.  These values are used as a percentage
+  # of the budget amount set above.  Setting a threshold of 200, would send an alert when the monthly spend has hit
+  # double the desired amount.
+  notifications:
+    - mechanism: email
+      threshold: 75
+    - mechanism: sms
+      threshold: 90
+    - mechanism: email
+      threshold: 20
+    - mechanism: sms
+      threshold: 84

@@ -19,7 +19,12 @@ setuptools.setup(
     packages=setuptools.find_packages(where="billing_alarms"),
 
     install_requires=[
-        "aws-cdk.core==1.46.0",
+        "aws-cdk.core",
+        "aws-cdk.aws_budgets",
+        "aws-cdk.aws_cloudwatch",
+        "aws-cdk.aws_sns_subscriptions",
+        "aws-cdk.aws_sns",
+        "PyYaml"
     ],
 
     python_requires=">=3.6",

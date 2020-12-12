@@ -6,6 +6,7 @@ This is a CDK project written to create an easily shared way to quickly setup a 
 
 ## Prerequisites
 
+1) 
 1) Docker must be installed  
     [Docker install instructions can be found here](https://docs.docker.com/engine/install/)
 

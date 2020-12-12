@@ -1,7 +1,9 @@
 ---
   # Set the phone number to use for notifications
+  # phone number format should be 1112223333 - essentially, remove all non-numeric characters from it.
   phone: <phone_number>
   # Set the email address to use for notifications
+  # email address should be in the format of user@domain.tld
   email: <email_address>
   budget:
     # Set the amount of your maximum desired budget here, please note this maximum is not enforced, it is merely a
